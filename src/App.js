@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import TopMenu from './components/TopMenu';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload the main page.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn JavaScript
-        </a>
-      </header>
-    </div>
+      <>
+          <TopMenu/>
+          <div className="App">
+          <header className="App-header">
+
+          </header>
+        </div>
+      </>
   );
 }
 
