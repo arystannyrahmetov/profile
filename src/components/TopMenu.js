@@ -20,11 +20,11 @@ function TopMenu() {
                         </Nav.Link>
                         <NavDropdown title="Статьи" id="basic-nav-dropdown">
                             <NavDropdown.Item>
-                                <Link to="/articles" className="link-secondary">Статьи</Link>
+                                <Link to="/profile/articles" className="link-secondary">Статьи</Link>
                             </NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item>
-                                <Link to={'/write_article'} className="link-secondary">Написать статью</Link>
+                                <Link to={'/profile/write_article'} className="link-secondary">Написать статью</Link>
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
