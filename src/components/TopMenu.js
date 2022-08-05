@@ -7,16 +7,16 @@ function TopMenu() {
         <Navbar bg="light" expand="lg">
             <Container>
                 <Navbar.Brand>
-                    <Link to="/" className="link-secondary">arystannyrahmetov</Link>
+                    <Link to="/profile" className="link-secondary">arystannyrahmetov</Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link>
-                            <Link to="/" className="link-secondary">Главное</Link>
+                            <Link to="/profile" className="link-secondary">Главное</Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="/" className="link-secondary">Ссылка</Link>
+                            <Link to="/profile" className="link-secondary">Ссылка</Link>
                         </Nav.Link>
                         <NavDropdown title="Статьи" id="basic-nav-dropdown">
                             <NavDropdown.Item>
