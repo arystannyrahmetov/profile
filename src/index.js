@@ -1,13 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
+import ArticleEditor from './components/Articles/ArticleEditor';
 import reportWebVitals from './reportWebVitals';
+import Articles from "./components/Articles/Articles";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+          <Routes>
+              <Route path="/" element={<App />} />
+              <Route path="/write_article" element={<ArticleEditor />} />
+              <Route path="/articles" element={<Articles />} />
+              <Route
+                  path="*"
+                  element={
+                      <main style={{ padding: "1rem" }}>
+                          <p>There's nothing here!</p>
+                      </main>
+                  }
+              />
+          </Routes>
+      </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -1,22 +1,31 @@
 import {Navbar, Nav, NavDropdown, Container} from 'react-bootstrap';
+import {Link} from "react-router-dom";
 
 function TopMenu() {
 
     return(
         <Navbar bg="light" expand="lg">
             <Container>
-                <Navbar.Brand href="#home">arystannyrahmetov</Navbar.Brand>
+                <Navbar.Brand>
+                    <Link to="/" className="link-secondary">arystannyrahmetov</Link>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Главное</Nav.Link>
-                        <Nav.Link href="#link">Ссылка</Nav.Link>
-                        <NavDropdown title="Меню" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Пункт 1</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Пункт 2</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Пункт 3</NavDropdown.Item>
+                        <Nav.Link>
+                            <Link to="/" className="link-secondary">Главное</Link>
+                        </Nav.Link>
+                        <Nav.Link>
+                            <Link to="/" className="link-secondary">Ссылка</Link>
+                        </Nav.Link>
+                        <NavDropdown title="Статьи" id="basic-nav-dropdown">
+                            <NavDropdown.Item>
+                                <Link to="/articles" className="link-secondary">Статьи</Link>
+                            </NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Пункт 4</NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <Link to={'/write_article'} className="link-secondary">Написать статью</Link>
+                            </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

@@ -7,10 +7,7 @@ function App() {
       <>
           <TopMenu/>
           <div className="App">
-          <header className="App-header">
-
-          </header>
-        </div>
+          </div>
       </>
   );
 }
