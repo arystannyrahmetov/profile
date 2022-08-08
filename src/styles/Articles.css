@@ -1,0 +1,12 @@
+.Articles-content {
+    padding: 5% 10%;
+}
+
+.Article {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: left;
+    /*border: 2px solid rgb(0, 0, 0);*/
+    padding: 5%;
+}
