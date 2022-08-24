@@ -2,7 +2,7 @@
 import React from "react";
 import {CKEditor} from '@ckeditor/ckeditor5-react';
 import DecoupledEditor from '@ckeditor/ckeditor5-build-decoupled-document';
-import '../../styles/Editor.css';
+import '../../styles/Editor.scss';
 
 function EditorComponent() {
     const [editorData, setEditorData] = React.useState('Type your text here');

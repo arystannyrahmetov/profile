@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Articles.css'
+import '../../styles/Articles.scss'
 
 interface IArticles {
     articles: Array<ISingleArticle>

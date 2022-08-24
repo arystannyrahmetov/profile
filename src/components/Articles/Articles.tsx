@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import TopMenu from "../TopMenu";
 import Article from "./Article";
-import '../../styles/Articles.css';
+import '../../styles/Articles.scss';
 
 function Articles() {
 
