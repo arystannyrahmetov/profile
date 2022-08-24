@@ -7,6 +7,7 @@ function App() {
       <>
           <TopMenu/>
           <div className="App">
+              <h3 style={{"margin": "1em 1em 1em 1em"}}>Rewrited to typescript</h3>
           </div>
       </>
   );

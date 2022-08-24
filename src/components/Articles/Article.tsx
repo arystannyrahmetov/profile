@@ -1,9 +1,20 @@
 import React from 'react'
 import '../../styles/Articles.css'
 
-function Article(props) {
+interface IArticles {
+    articles: Array<ISingleArticle>
+}
 
-    function articleOnClick(e, article) {
+interface ISingleArticle {
+    id: string,
+    title: string,
+    body: string,
+    userId: string
+}
+
+function Article(props: IArticles) {
+
+    function articleOnClick(e: React.MouseEvent<HTMLDivElement>, article: ISingleArticle) {
         e.preventDefault()
         console.log(article)
     }
