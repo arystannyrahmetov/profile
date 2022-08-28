@@ -5,7 +5,7 @@ interface IConfig {
 }
 
 const serverConfig: IConfig = {
-    prod_hostname: "https://021e-95-56-55-102.eu.ngrok.io",
+    prod_hostname: "https://us-central1-profile-server-49cb8.cloudfunctions.net/app",
     dev_hostname: "localhost",
 };
 
