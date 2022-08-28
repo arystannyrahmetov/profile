@@ -2,16 +2,17 @@ import React, {useEffect} from 'react';
 import TopMenu from "../TopMenu";
 import Article from "./Article";
 import '../../styles/Articles.scss';
+import {getAllPosts, IPost} from "../../api/posts_api";
 
 function Articles() {
 
-    const [articles, setArticles] = React.useState([]);
+    const [articles, setArticles] = React.useState<Array<IPost>|[]>([]);
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/posts')
-            .then(response => response.json())
-            .then(json => setArticles(json))
-    }, [articles]);
+        getAllPosts().then(res => {
+            setArticles(res);
+        });
+    }, []);
 
     return (
         <div className="Articles">
