@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Navigate, Route } from 'react-router-dom';
+import { Routes, Navigate, Route, HashRouter} from 'react-router-dom';
 import './index.scss';
 import App from './App';
 import ArticleEditor from './components/Articles/ArticleEditor';
@@ -11,7 +11,7 @@ import Articles from "./components/Articles/Articles";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <BrowserRouter>
+      <HashRouter>
           <Routes>
               <Route path="/profile" element={<App />} />
               <Route path="/profile/write_article" element={<ArticleEditor />} />
@@ -23,7 +23,7 @@ root.render(
                   }
               />
           </Routes>
-      </BrowserRouter>
+      </HashRouter>
   </React.StrictMode>
 );
 
