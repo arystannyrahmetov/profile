@@ -15,7 +15,7 @@ interface IPost {
 
 async function getAllPosts(): Promise<Array<IPost> | []> {
     let res: Array<IPost> | [] = [];
-    await axios.get(`${serverConfig.dev_hostname}/posts/`)
+    await axios.get(`${serverConfig.prod_hostname}/posts/`)
         .then((response: IPosts) => {
             res = response.data;
         });
