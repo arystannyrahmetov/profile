@@ -5,8 +5,8 @@ interface IConfig {
 }
 
 const serverConfig: IConfig = {
-    prod_hostname: "https://us-central1-profile-server-49cb8.cloudfunctions.net/app",
-    dev_hostname: "localhost",
+    prod_hostname: "https://profile-backend-server.herokuapp.com/app",
+    dev_hostname: "http://localhost:5001/profile-server-49cb8/us-central1/app"
 };
 
 export default serverConfig;
